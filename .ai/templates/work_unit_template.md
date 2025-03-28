@@ -1,68 +1,106 @@
-# Work Unit: [WU-XXX] - [Title]
+# Work Unit: [Title]
 
-## Status Summary
-- **Type**: [Implementation/Enhancement/Bug Fix/Refactoring]
-- **Status**: [Not Started/In Progress/Completed]
-- **Start Date**: [YYYY-MM-DD]
-- **Completion**: [X/Y tasks (Z%)]
+## Metadata
+- **ID**: [Work Unit ID, e.g., WU-007]
+- **Type**: [Enhancement/Feature/Bug Fix/Documentation]
+- **Status**: [Proposed/In Progress/Completed]
+- **Completion**: [0-100%]
+- **Created**: [YYYY-MM-DD]
+- **Last Updated**: [YYYY-MM-DD]
+- **Priority**: [High/Medium/Low]
+- **Assigned To**: [AI Assistant/Human Project Manager]
+- **Reviewed By**: [AI Assistant/Human Project Manager]
 
-## Overview
-[Brief description of this work unit]
+## Description
 
-## Parent Work Unit
-[If this is a child work unit, reference the parent work unit here with a link and brief explanation of the relationship]
+[Provide a clear, concise description of the work unit. Explain what this work unit aims to accomplish and why it's important.]
 
-## Goals
-- [Goal 1]
-- [Goal 2]
-- [Goal 3]
+## Objectives
+
+1. [First objective]
+2. [Second objective]
+3. [Third objective]
+4. [...]
+
+## Requirements
+
+### 1. [Requirement Category]
+
+#### 1.1 [Specific Requirement]
+- **Priority**: [Critical/High/Medium/Low]
+- **Status**: [Proposed/In Progress/Completed]
+- **Completion**: [0%/25%/50%/75%/100%]
+- **Description**: [Detailed description of the requirement]
+- **Responsibility Assignment**:
+  - **AI Assistant**: [Specific, measurable responsibilities]
+  - **Human Project Manager**: [Only include if human has specific responsibilities]
+  - **Automated Script**: [Only include if scripts have specific responsibilities]
+- **Implementation Details**:
+  - [Specific implementation details]
+  - [Technical approach]
+  - [Constraints or considerations]
+  - [For automated components, include script names and execution details]
+
+#### 1.2 [Specific Requirement]
+- **Priority**: [Critical/High/Medium/Low]
+- **Status**: [Proposed/In Progress/Completed]
+- **Completion**: [0%/25%/50%/75%/100%]
+- **Description**: [Detailed description of the requirement]
+- **Responsibility Assignment**:
+  - **AI Assistant**: [Specific, measurable responsibilities]
+- **Implementation Details**:
+  - [Specific implementation details]
+  - [Technical approach]
+  - [Constraints or considerations]
+
+### 2. [Requirement Category]
+
+#### 2.1 [Specific Requirement]
+- **Priority**: [Critical/High/Medium/Low]
+- **Status**: [Proposed/In Progress/Completed]
+- **Completion**: [0%/25%/50%/75%/100%]
+- **Description**: [Detailed description of the requirement]
+- **Responsibility Assignment**:
+  - **AI Assistant**: [Specific, measurable responsibilities]
+- **Implementation Details**:
+  - [Specific implementation details]
+  - [Technical approach]
+  - [Constraints or considerations]
 
 ## Implementation Plan
-1. [Task 1]
-   - [ ] [Subtask 1.1]
-   - [ ] [Subtask 1.2]
-2. [Task 2]
-   - [ ] [Subtask 2.1]
-   - [ ] [Subtask 2.2]
 
-## Technical Requirements
-[Technical requirements and constraints]
+### Phase 1: [Phase Name]
+1. **AI Assistant**: 
+   - [Task 1]
+   - [Task 2]
+   - [Task 3]
+2. **Human Project Manager** (if needed): 
+   - [Task 1]
 
-## Dependencies
-[Dependencies on other components or systems]
+### Phase 2: [Phase Name]
+1. **AI Assistant**: 
+   - [Task 1]
+   - [Task 2]
+   - [Task 3]
 
-## Implementation Approach
-[High-level approach to implementation]
+## Success Criteria
 
-## Implementation Progress
-- **Completed Tasks**: [X]
-- **Planned Tasks**: [Y]
-- **Total Tasks**: [Z]
-- **Completion Percentage**: [P%]
+1. [Measurable criterion for success]
+2. [Measurable criterion for success]
+3. [Measurable criterion for success]
+4. [...]
 
-## Documentation Enhancements
-[Information from this work unit that should be added to project documentation]
-- [Enhancement 1]
-  - **Target**: [Where this should be documented]
-  - **Key Points**: [Important information to include]
-- [Enhancement 2]
-  - **Target**: [Where this should be documented]
-  - **Key Points**: [Important information to include]
+## Related Components
 
-## Parent Unit Impact
-[For child work units, document impacts on the parent unit]
-- [Component X in the parent unit should be updated to use the new implementation]
-- [The completion percentage of the parent unit should increase by Y%]
-- [Documentation in the parent unit should reference the new capabilities]
+- [Related component 1]
+- [Related component 2]
+- [Related component 3]
+- [...]
 
-## Checklist History
-| Date | Change | Reason | Requested By |
-|------|--------|--------|--------------|
-| [YYYY-MM-DD] | [Added/Modified item] | [Reason for change] | [Person/Role] |
+## Notes
 
-## Remaining Work
-[Work that still needs to be done]
+[Additional notes, considerations, or context that might be helpful]
 
-## Related Work Units
-[Other work units that are related to this one, including child units]
-- [WU-XXX: Title](./WU-XXX_title.md): [Brief description of relationship]
+## Changelog
+
+- **[YYYY-MM-DD]**: [Change description]

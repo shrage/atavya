@@ -1,10 +1,20 @@
 # AI Documentation Framework Version
 
-## Current Framework Version: 1.3.0
+## Current Framework Version: 1.4.0
 
 This file tracks the version of the AI Documentation Framework being used in this project and any project-specific customizations.
 
 ## Version History
+
+### v1.4.0 (2025-03-28)
+- **Upgraded to Framework v1.4.0**
+- Implemented Universal Document Linking and Status Tracking (EP-005)
+- Added Centralized Knowledge Documentation System (EP-006)
+- Integrated Central Framework Documentation System (EP-007)
+- Applied Enhancement Proposal Lifecycle Management (EP-008)
+- Implemented Documentation Reconciliation Protocol (EP-009)
+- Updated all documentation to reflect human-AI collaboration model
+- Aligned project with central framework first implementation principles
 
 ### v1.3.0 (2025-03-27)
 - **Upgraded to Framework v1.3.0**
@@ -50,6 +60,11 @@ This file tracks the version of the AI Documentation Framework being used in thi
 - Component status tracking in work units
 - Visual design system documentation
 
+### Human-AI Collaboration Customizations
+- HVAC domain-specific responsibility matrix
+- Industry-specific communication patterns
+- Specialized verification processes for HVAC components
+
 ## Upgrade Notes
 
 When upgrading the framework, ensure that:
@@ -57,3 +72,16 @@ When upgrading the framework, ensure that:
 2. Project-specific customizations are preserved
 3. Documentation is updated to reflect new capabilities
 4. Version number is updated in this file
+5. Enhancement proposals are implemented in the central framework first
+6. Project inherits changes from the central framework
+
+## Central Framework Inheritance
+
+This project inherits from the central AI Documentation Framework v1.4.0, which includes:
+- Human-AI Collaboration Model (EP-010)
+- Central Framework First Implementation (EP-011)
+- Universal Document Linking and Status Tracking (EP-005)
+- Centralized Knowledge Documentation System (EP-006)
+- Central Framework Documentation System (EP-007)
+- Enhancement Proposal Lifecycle Management (EP-008)
+- Documentation Reconciliation Protocol (EP-009)

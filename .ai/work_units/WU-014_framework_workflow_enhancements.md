@@ -2,18 +2,21 @@
 
 ## Metadata
 - **ID**: WU-014
-- **Title**: AI Documentation Framework Workflow Enhancements
-- **Description**: Enhance the AI Documentation Framework with stricter work unit management, explicit user approval gates, and improved traceability.
+- **Type**: Enhancement
 - **Status**: Not Started
+- **Completion**: 0%
 - **Created**: 2025-03-27
-- **Last Updated**: 2025-03-27
-- **Estimated Completion**: 2025-04-05
-- **Actual Completion**: -
-- **Dependencies**: None
-- **Related Work Units**: WU-010 (Framework Enhancements)
+- **Last Updated**: 2025-03-28
 - **Priority**: Critical
-- **Assigned To**: -
-- **Reviewed By**: -
+- **Assigned To**: AI Assistant
+- **Reviewed By**: Human Project Manager
+
+## Description
+
+This work unit addresses critical improvements to the AI Documentation Framework's workflow, particularly focusing on stricter work unit management, explicit user approval gates, and improved traceability between requirements, tests, and implementation. These enhancements aim to prevent confusion, ensure proper sequencing of activities, and maintain alignment with architectural principles.
+
+## Parent Work Unit
+- [WU-001: Atavya Platform Core Requirements](./WU-001_atavya_platform_core_requirements.md)
 
 ## Overview
 This work unit addresses critical improvements to the AI Documentation Framework's workflow, particularly focusing on stricter work unit management, explicit user approval gates, and improved traceability between requirements, tests, and implementation. These enhancements aim to prevent confusion, ensure proper sequencing of activities, and maintain alignment with architectural principles.

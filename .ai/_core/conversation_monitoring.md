@@ -1,24 +1,34 @@
-# AI Documentation Framework: Conversation Monitoring
+# AI Documentation Framework: Human-AI Conversation Monitoring
 
 ## Overview
 
-This document defines how the AI Documentation Framework monitors conversations to detect key patterns, track progress through checkpoints, and maintain context. Effective conversation monitoring ensures that important information is captured and appropriate actions are taken.
+This document defines how the AI Documentation Framework monitors conversations between the human project manager and the AI assistant to detect key patterns, track progress through checkpoints, and maintain context. Effective conversation monitoring ensures that important information is captured and appropriate actions are taken by the AI assistant.
+
+## Human-AI Collaboration in Conversation Monitoring
+
+The conversation monitoring process follows the human-AI collaboration model:
+
+1. **AI Pattern Detection**: The AI assistant monitors conversations to detect key patterns
+2. **AI Recommendation**: The AI assistant recommends appropriate actions based on detected patterns
+3. **Human Decision**: The human project manager makes decisions based on AI recommendations
+4. **AI Implementation**: The AI assistant implements the human project manager's decisions
+5. **AI Documentation**: The AI assistant documents decisions and actions
 
 ## Checkpoint Detection and Processing
 
-### Detecting Checkpoint Opportunities
+### Detecting Checkpoint Opportunities (AI Responsibility)
 
-Monitor conversations for opportunities to initiate checkpoints:
+The AI assistant monitors conversations for opportunities to initiate checkpoints:
 
 1. **Checkpoint 1 Opportunities**:
    - When requirements discussion appears complete
    - After analyzing architecture documents
-   - When the user asks about next steps after requirements discussion
+   - When the human project manager asks about next steps after requirements discussion
 
 2. **Checkpoint 2 Opportunities**:
    - After discussing design approaches
    - When component design details are established
-   - When the user asks about implementation approaches
+   - When the human project manager asks about implementation approaches
 
 3. **Checkpoint 3 Opportunities**:
    - After outlining implementation steps
@@ -28,11 +38,11 @@ Monitor conversations for opportunities to initiate checkpoints:
 4. **Checkpoint 4 Opportunities**:
    - After implementation is complete
    - When discussing testing results
-   - When the user asks about implementation status
+   - When the human project manager asks about implementation status
 
 ### Checkpoint Conversation Patterns
 
-When a checkpoint opportunity is detected, use these conversation patterns:
+When a checkpoint opportunity is detected, the AI assistant uses these conversation patterns:
 
 #### Checkpoint 1: Requirements & Architecture Understanding
 ```
@@ -74,29 +84,52 @@ I've completed the implementation according to our plan. Here's a summary:
 Does this implementation meet your expectations? Any adjustments you'd like to make?
 ```
 
-### Processing Checkpoint Responses
+### Processing Checkpoint Responses (AI Responsibility)
 
-When the user responds to a checkpoint:
+When the human project manager responds to a checkpoint:
 
 1. **For Confirmation**:
-   - Update the work unit's checkpoint status to "Confirmed"
-   - Document key decisions and understanding
-   - Proceed to the next phase
-   - Update relevant documentation as needed
+   - AI updates the work unit's checkpoint status to "Confirmed"
+   - AI documents key decisions and understanding
+   - AI proceeds to the next phase
+   - AI updates relevant documentation as needed
 
 2. **For Clarification Requests**:
-   - Address the specific questions or concerns
-   - Refine understanding based on feedback
-   - Re-present the checkpoint when ready
+   - AI addresses the specific questions or concerns
+   - AI refines understanding based on feedback
+   - AI re-presents the checkpoint when ready
 
 3. **For Adjustments**:
-   - Incorporate requested changes
-   - Update understanding and plans
-   - Re-present the checkpoint when ready
+   - AI incorporates requested changes
+   - AI updates understanding and plans
+   - AI re-presents the checkpoint when ready
 
-## Documentation Need Detection
+## Checkpoint Transition Protocol
 
-Monitor conversations to detect when documentation updates are needed:
+When transitioning between checkpoints, the AI assistant follows this protocol:
+
+1. **Verify Completion Criteria**:
+   - Check that all completion criteria for the current checkpoint are met
+   - Ensure all required documentation is created and ready for human review
+
+2. **Update Work Unit Status**:
+   - Mark the current checkpoint as "Confirmed" after human approval
+   - Document the approval date and any notes
+   - Update references to documentation
+
+3. **Prepare for Next Checkpoint**:
+   - Summarize the current state and next steps
+   - Identify any dependencies or blockers
+   - Outline the approach for the next checkpoint
+
+4. **Seek Explicit Approval**:
+   - Present the checkpoint status and next steps
+   - Ask for explicit approval from the human project manager
+   - Document the approval in the work unit
+
+## Documentation Need Detection (AI Responsibility)
+
+The AI assistant monitors conversations to detect when documentation updates are needed:
 
 ### Requirements Documentation Needs
 - Discussion of new features or capabilities
@@ -120,12 +153,12 @@ Monitor conversations to detect when documentation updates are needed:
 
 ## Work Unit Status Tracking
 
-Monitor conversations to track work unit status:
+The AI assistant monitors conversations to track work unit status:
 
 1. **Creation Triggers**:
    - Starting work on a new feature or component
    - Breaking down a larger task into smaller units
-   - User request to create a work unit
+   - Human project manager request to create a work unit
 
 2. **Status Update Triggers**:
    - Completion of a checkpoint
@@ -136,14 +169,14 @@ Monitor conversations to track work unit status:
 3. **Completion Triggers**:
    - All implementation tasks complete
    - All tests passing
-   - User confirmation of completion
+   - Human project manager confirmation of completion
 
-## Context Maintenance
+## Context Maintenance (AI Responsibility)
 
-Maintain conversation context through:
+The AI assistant maintains conversation context through:
 
 1. **Key Decision Tracking**:
-   - Identify and document important decisions
+   - Identify and document important decisions made by the human project manager
    - Note rationale for decisions
    - Track changes to decisions
 
@@ -159,7 +192,7 @@ Maintain conversation context through:
 
 ## Documentation Update Triggers
 
-Identify when documentation should be updated:
+The AI assistant identifies when documentation should be updated:
 
 1. **After Checkpoint 1**:
    - Update requirements documentation (if needed)
@@ -176,9 +209,102 @@ Identify when documentation should be updated:
    - Finalize implementation plan in work unit
 
 4. **After Checkpoint 4**:
-   - Create how-to guides (if needed)
+   - Update how-to guides (if needed)
    - Update test documentation (if needed)
-   - Finalize relevant documentation (if needed)
+   - Update API documentation (if needed)
+   - Finalize work unit documentation
+
+## Human Input Patterns
+
+The AI assistant recognizes these common patterns in human project manager input:
+
+### Directive Patterns
+- "Create a [document/component/feature]"
+- "Update the [document/component/feature]"
+- "Implement [feature/change]"
+
+### Question Patterns
+- "What's the status of [work unit/feature]?"
+- "How does [component/feature] work?"
+- "Why was [decision] made?"
+
+### Feedback Patterns
+- "This looks good, but [suggestion]"
+- "I don't think this [aspect] is right"
+- "Let's change [aspect] to [alternative]"
+
+### Approval Patterns
+- "This looks good"
+- "Approved"
+- "Let's proceed with this"
+
+## AI Response Patterns
+
+The AI assistant uses these response patterns:
+
+### Information Presentation
+- Present information in clear, structured formats
+- Use bullet points for lists
+- Use tables for comparisons
+- Use code blocks for code examples
+
+### Recommendation Presentation
+- Clearly label recommendations
+- Provide rationale for recommendations
+- Present alternatives when appropriate
+- Highlight implications of choices
+
+### Status Updates
+- Provide clear progress indicators
+- Highlight completed items
+- Note remaining items
+- Identify blockers or dependencies
+
+### Decision Requests
+- Clearly frame decisions needed
+- Present options with pros and cons
+- Recommend a preferred option
+- Make it easy for the human to respond
+
+## Human-AI Communication Efficiency
+
+To maintain efficient communication:
+
+1. **AI Responsibility**:
+   - Keep responses concise but complete
+   - Anticipate follow-up questions
+   - Provide context with responses
+   - Format information for easy consumption
+
+2. **Human Project Manager Expectations**:
+   - Provide clear direction
+   - Make explicit decisions
+   - Provide feedback on AI performance
+   - Clarify ambiguous requirements
+
+## Documentation of Conversations
+
+The AI assistant documents key aspects of conversations:
+
+1. **Decision Documentation**:
+   - Document decisions in relevant work units
+   - Update design documents with rationale
+   - Maintain decision logs when appropriate
+
+2. **Requirement Documentation**:
+   - Update requirements based on conversation
+   - Document clarifications
+   - Track scope changes
+
+3. **Implementation Notes**:
+   - Document implementation decisions
+   - Note challenges and solutions
+   - Document deviations from plans
+
+4. **Feedback Integration**:
+   - Document feedback received
+   - Track how feedback was addressed
+   - Note improvements made based on feedback
 
 ## Conclusion
 

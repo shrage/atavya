@@ -1,18 +1,95 @@
-# AI Documentation Framework: Workflow Patterns
+# AI Documentation Framework: Human-AI Workflow Patterns
 
 ## Overview
 
-This document defines the core workflow patterns used by the AI Documentation Framework. These patterns guide the conversation flow, documentation creation, and work tracking processes.
+This document defines the core workflow patterns used by the AI Documentation Framework. These patterns guide the conversation flow, documentation creation, and work tracking processes between the human project manager and the AI assistant.
 
-## Conversation-Based Workflow Checkpoints
+## Human-AI Collaboration in Workflow
 
-The framework uses a conversation-based checkpoint system to ensure alignment at key points in the workflow. These checkpoints provide natural points for confirmation before proceeding to the next phase of work.
+The AI Documentation Framework is built on a collaboration model between a human project manager and an AI assistant. All workflow patterns reflect this collaboration model:
+
+1. **Human Decision Authority**: The human project manager has final decision-making authority at all checkpoints
+2. **AI Recommendation Role**: The AI assistant provides recommendations and implements approved decisions
+3. **Clear Responsibility Delineation**: Each workflow step has clear human and AI responsibilities
+4. **Iterative Refinement**: Workflows incorporate feedback loops between human and AI
+5. **Documentation Responsibility**: The AI maintains documentation with human approval
+
+## Checkpoint Completion Criteria and Documentation Practices
+
+Each checkpoint in the workflow has specific completion criteria and associated documentation practices:
+
+### Checkpoint 1: Requirements & Architecture Understanding
+**Completion Criteria**:
+- All requirements are documented in a dedicated requirements file
+- User stories are created for each requirement
+- Requirements are linked to architectural components
+- Requirements document has been reviewed and approved by the human project manager
+- Work unit has been updated with a reference to the requirements document
+
+**Documentation Practices**:
+- AI creates a dedicated file in `.ai/requirements/[domain]/[component]_requirements.md`
+- AI includes functional and non-functional requirements based on human input
+- AI adds user stories for each requirement
+- AI links to architectural components
+- AI references in the work unit
+- Human reviews and approves the documentation
+
+### Checkpoint 2: Design Approach
+**Completion Criteria**:
+- Design approach is documented in a dedicated design file
+- Component structure is defined
+- Technical decisions are documented with rationale
+- Design is aligned with architectural principles
+- Design document has been reviewed and approved by the human project manager
+- Work unit has been updated with a reference to the design document
+
+**Documentation Practices**:
+- AI creates a dedicated file in `.ai/design/[component]_design.md`
+- AI includes component structure based on human input and project requirements
+- AI documents technical decisions and rationale
+- AI includes diagrams where appropriate
+- AI references in the work unit
+- Human reviews and approves the design
+
+### Checkpoint 3: Implementation Plan
+**Completion Criteria**:
+- Implementation tasks are broken down in detail
+- Dependencies between tasks are identified
+- Testing approach is defined
+- Implementation plan has been reviewed and approved by the human project manager
+- Work unit has been updated with the implementation plan
+
+**Documentation Practices**:
+- AI documents directly in the work unit
+- AI breaks down into phases with specific tasks
+- AI includes testing approach
+- AI documents dependencies
+- Human reviews and approves the implementation plan
+
+### Checkpoint 4: Implementation Review
+**Completion Criteria**:
+- All implementation tasks are complete
+- Tests are passing
+- Documentation is updated
+- Implementation has been reviewed by the human project manager
+- Implementation has been approved by the human project manager
+- Work unit has been updated with implementation details
+
+**Documentation Practices**:
+- AI updates the work unit with implementation summary
+- AI creates how-to guides if needed in `.ai/guides/`
+- AI updates API documentation if applicable
+- Human reviews and approves the implementation and documentation
+
+## Human-AI Conversation-Based Workflow Checkpoints
+
+The framework uses a human-AI conversation-based checkpoint system to ensure alignment at key points in the workflow. These checkpoints provide natural points for human confirmation before proceeding to the next phase of work.
 
 ### Checkpoint 1: Requirements & Architecture Understanding
 
 **Purpose**: Ensure shared understanding of requirements and architectural context before proceeding to design.
 
-**Conversation Pattern**:
+**AI Conversation Pattern**:
 ```
 Based on our discussion, I understand that:
 1. [Summarize key requirements]
@@ -22,21 +99,26 @@ Based on our discussion, I understand that:
 Does this align with your expectations? Would you like me to proceed with designing an approach, or is there anything we should clarify first?
 ```
 
-**Documentation Updates** (only if needed):
+**Human Response Options**:
+- Confirm understanding and authorize proceeding to design
+- Provide clarifications or corrections
+- Request additional information or analysis
+
+**Documentation Updates** (AI responsibility):
 - Requirements documentation
 - Initial architecture documentation
 - Initial feature documentation
 - Initial test specifications
 
-**Work Unit Updates** (always required):
-- Mark Checkpoint 1 as "Confirmed"
+**Work Unit Updates** (AI responsibility):
+- Mark Checkpoint 1 as "Confirmed" after human approval
 - Document key decisions and understanding
 
 ### Checkpoint 2: Design Approach
 
 **Purpose**: Confirm the design approach before proceeding to implementation planning.
 
-**Conversation Pattern**:
+**AI Conversation Pattern**:
 ```
 Here's my proposed approach for implementing this:
 1. [Outline component design]
@@ -46,21 +128,26 @@ Here's my proposed approach for implementing this:
 Does this approach make sense to you? Should we adjust anything before I start planning the implementation details?
 ```
 
-**Documentation Updates** (only if needed):
+**Human Response Options**:
+- Approve design approach and authorize proceeding to implementation planning
+- Request modifications to the design
+- Ask for clarification or additional details
+
+**Documentation Updates** (AI responsibility):
 - Design documentation
 - User flows (for UI changes)
 - Refined architecture documentation
 - Refined feature documentation
 
-**Work Unit Updates** (always required):
-- Mark Checkpoint 2 as "Confirmed"
+**Work Unit Updates** (AI responsibility):
+- Mark Checkpoint 2 as "Confirmed" after human approval
 - Document design decisions and rationale
 
 ### Checkpoint 3: Implementation Plan
 
 **Purpose**: Confirm the implementation plan before starting implementation.
 
-**Conversation Pattern**:
+**AI Conversation Pattern**:
 ```
 Here's my implementation plan:
 1. [List implementation steps]
@@ -70,18 +157,23 @@ Here's my implementation plan:
 Are you comfortable with me proceeding with this implementation plan? Any adjustments you'd like to make?
 ```
 
-**Documentation Updates** (only if needed):
+**Human Response Options**:
+- Approve implementation plan and authorize proceeding to implementation
+- Request modifications to the plan
+- Ask for clarification on specific implementation details
+
+**Documentation Updates** (AI responsibility):
 - Implementation plan in work unit
 
-**Work Unit Updates** (always required):
-- Mark Checkpoint 3 as "Confirmed"
+**Work Unit Updates** (AI responsibility):
+- Mark Checkpoint 3 as "Confirmed" after human approval
 - Document implementation approach
 
 ### Checkpoint 4: Implementation Review
 
 **Purpose**: Review the implementation and confirm it meets expectations.
 
-**Conversation Pattern**:
+**AI Conversation Pattern**:
 ```
 I've completed the implementation according to our plan. Here's a summary:
 1. [Summarize what was implemented]
@@ -91,13 +183,18 @@ I've completed the implementation according to our plan. Here's a summary:
 Does this implementation meet your expectations? Any adjustments you'd like to make?
 ```
 
-**Documentation Updates** (only if needed):
+**Human Response Options**:
+- Approve implementation and mark work unit as complete
+- Request modifications or improvements
+- Ask for clarification on specific implementation details
+
+**Documentation Updates** (AI responsibility):
 - How-to guides
 - Test documentation
 - API documentation
 
-**Work Unit Updates** (always required):
-- Mark Checkpoint 4 as "Confirmed"
+**Work Unit Updates** (AI responsibility):
+- Mark Checkpoint 4 as "Confirmed" after human approval
 - Update completion percentage
 - Update work unit registry
 
@@ -125,7 +222,7 @@ Not every work unit requires all types of documentation. The decision about whic
    - User-facing changes might need feature documentation and user flows
    - Cross-team changes might need more comprehensive documentation
 
-During checkpoint conversations, explicitly discuss which documentation needs to be created or updated based on these factors, rather than assuming all documentation types are needed for every work unit.
+During checkpoint conversations, the AI should explicitly propose which documentation needs to be created or updated based on these factors, and the human project manager should approve or modify these recommendations.
 
 ## Work Unit Management
 
@@ -136,47 +233,44 @@ Work units should be created at the beginning of a task to track progress and ma
 1. Use the standard work unit template
 2. Have a unique identifier (WU-XXX)
 3. Include clear metadata (status, dependencies, etc.)
-4. Define the scope and objectives
-5. Include checkpoint status tracking
 
-### Parent-Child Relationships
+**Human Responsibility**:
+- Approve work unit creation
+- Define high-level scope and objectives
+- Approve or modify work unit structure
 
-For complex tasks, use parent-child relationships between work units:
+**AI Responsibility**:
+- Propose work unit creation when appropriate
+- Create work unit documentation
+- Maintain work unit status
+- Link work unit to related documentation
 
-1. Parent work units define broader components or features
-2. Child work units define specific implementations or sub-features
-3. Relationships should be explicitly documented in the work unit registry
-4. Child work units should reference their parent work unit
+### Updating Work Units
 
-### Work Unit Registry
+Work units should be updated at each checkpoint and whenever significant progress is made:
 
-The work unit registry provides a central index of all work units and their relationships:
+**Human Responsibility**:
+- Review and approve work unit updates
+- Provide feedback on progress
+- Make key decisions on direction changes
 
-1. Update the registry when creating or updating work units
-2. Include completion percentages and status
-3. Document parent-child relationships
-4. Track dependencies between work units
+**AI Responsibility**:
+- Update work unit status and completion percentage
+- Document progress and decisions
+- Highlight blockers or issues requiring human input
+- Maintain links to related documentation
 
-## Traceability
+### Completing Work Units
 
-Maintain traceability between related artifacts to ensure consistency and completeness:
+When a work unit is complete:
 
-1. Link requirements to architectural components
-2. Connect test cases to requirements
-3. Map implementation files to requirements and test cases
-4. Document design decisions and their rationale
+**Human Responsibility**:
+- Verify work unit completion
+- Approve final documentation
+- Make final acceptance decision
 
-Traceability notes should be included in work units and relevant documentation to maintain a clear chain of relationships.
-
-## Continuous Improvement
-
-The framework should continuously evolve based on feedback and experience:
-
-1. Identify friction points in the workflow
-2. Detect patterns that could be improved
-3. Update framework documentation to reflect improvements
-4. Share learnings across projects
-
-## Conclusion
-
-These workflow patterns provide a flexible but structured approach to documentation and work management. They ensure alignment through conversation-based checkpoints while maintaining appropriate documentation based on the specific needs of each work unit.
+**AI Responsibility**:
+- Update work unit status to "Completed"
+- Ensure all documentation is complete and linked
+- Update work unit registry
+- Propose follow-up work if appropriate
