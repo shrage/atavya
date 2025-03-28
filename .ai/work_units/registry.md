@@ -2,80 +2,110 @@
 
 ## Active Work Units
 
-### WU-008: Custom Field Components
+### WU-001: Atavya Platform Core Requirements
 - **Status**: In Progress
-- **Completion**: 79% (67/85 components)
-- **Child Units**: 
-  - [WU-009: Rich Text Standardization](#wu-009-rich-text-standardization) 
-- **Relationship Type**: Parent-Child (Component Group to Component Specialization)
-- **Dependencies**: None
-- **Last Updated**: 2025-03-27
-
-### WU-010: Framework Enhancements
-- **Status**: In Progress
-- **Completion**: 0% (0/5 enhancements)
+- **Completion**: 65%
+- **Description**: Define the product vision, design philosophy, and core goals of the Atavya platform.
 - **Relationship Type**: Independent
 - **Dependencies**: None
-- **Last Updated**: 2025-03-27
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-001_atavya_platform_core_requirements.md](./WU-001_atavya_platform_core_requirements.md)
+
+### WU-008: UI Component Library Implementation
+- **Status**: In Progress
+- **Completion**: 79%
+- **Description**: Multi-purpose button component with Notion-inspired styling
+- **Relationship Type**: Independent
+- **Dependencies**: None
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-008_custom_field_components.md](./WU-008_custom_field_components.md)
+
+### WU-010: AI Documentation Framework Enhancements
+- **Status**: In Progress
+- **Completion**: 25%
+- **Description**: Enhance the framework to handle dynamic checklists and status recalculation
+- **Relationship Type**: Independent
+- **Dependencies**: None
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-010_framework_enhancements.md](./WU-010_framework_enhancements.md)
 
 ### WU-013: Atavya Side Panel
 - **Status**: Not Started
-- **Completion**: 0% (0/24 tasks)
-- **Child Units**:
-  - [WU-013-01: HVAC Field Management Side Panel](#wu-013-01-hvac-field-management-side-panel)
-- **Relationship Type**: Parent-Child (Core Component to Industry Specialization)
-- **Dependencies**: WU-008 (UI Component Library)
-- **Last Updated**: 2025-03-27
+- **Completion**: 0%
+- **Description**: Implement the core Atavya side panel component that provides navigation, organization management, and notification features for all industry implementations.
+- **Relationship Type**: Independent
+- **Dependencies**: - UI Component Library (WU-008)
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-013_atavya_side_panel.md](./WU-013_atavya_side_panel.md)
 
 ### WU-013-01: HVAC Field Management Side Panel
 - **Status**: Not Started
-- **Completion**: 0% (0/30 tasks)
-- **Parent Unit**: [WU-013: Atavya Side Panel](#wu-013-atavya-side-panel)
+- **Completion**: 0%
+- **Description**: Implement the HVAC field management side panel that extends the core Atavya side panel with industry-specific navigation and functionality.
 - **Relationship Type**: Child-Parent (Industry Specialization to Core Component)
-- **Dependencies**: 
-  - WU-008 (UI Component Library)
-  - WU-013 (Atavya Side Panel)
-- **Last Updated**: 2025-03-27
+- **Dependencies**: - UI Component Library (WU-008)
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-013-01_hvac_field_management_side_panel.md](./WU-013-01_hvac_field_management_side_panel.md)
 
-### WU-014: Framework Workflow Enhancements
+### WU-014: AI Documentation Framework Workflow Enhancements
 - **Status**: Not Started
-- **Completion**: 0% (0/25 tasks)
+- **Completion**: 0%
+- **Description**: AI Documentation Framework Workflow Enhancements
 - **Relationship Type**: Independent
 - **Dependencies**: None
-- **Related Units**: WU-010 (Framework Enhancements)
-- **Last Updated**: 2025-03-27
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-014_framework_workflow_enhancements.md](./WU-014_framework_workflow_enhancements.md)
 
 ## Completed Work Units
 
 ### WU-009: Rich Text Standardization
 - **Status**: Completed
-- **Completion**: 100% (6/6 components)
-- **Parent Unit**: [WU-008: Custom Field Components](#wu-008-custom-field-components)
-- **Relationship Type**: Child-Parent (Component Specialization to Component Group)
-- **Dependencies**: Requires RichTextEditor component from WU-008
-- **Completion Date**: 2025-03-27
-- **Impact**: Updated parent unit completion from 78% to 79% 
+- **Completion**: 100%
+- **Description**: Update the existing RichTextField to use the core RichTextEditor
+- **Relationship Type**: Independent
+- **Dependencies**: None
+- **Last Updated**: 2025-03-28
+- **Path**: [./WU-009_rich_text_standardization.md](./WU-009_rich_text_standardization.md)
 
 ## Work Unit Hierarchy
 
 ```
-WU-008: Custom Field Components (79% complete)
-└── WU-009: Rich Text Standardization (100% complete)
+WU-001: Atavya Platform Core Requirements (65% complete)
 
-WU-010: Framework Enhancements (0% complete)
+WU-008: UI Component Library Implementation (79% complete)
+
+WU-010: AI Documentation Framework Enhancements (25% complete)
 
 WU-013: Atavya Side Panel (0% complete)
-└── WU-013-01: HVAC Field Management Side Panel (0% complete)
 
-WU-014: Framework Workflow Enhancements (0% complete)
+WU-013-01: HVAC Field Management Side Panel (0% complete)
+
+WU-014: AI Documentation Framework Workflow Enhancements (0% complete)
+
+WU-009: Rich Text Standardization (100% complete)
+
 ```
 
 ## Registry Maintenance
 
-This registry is automatically updated when:
-- New work units are created
-- Work unit status changes
-- Completion percentages are updated
-- Relationships between work units are established
+This registry is maintained to track all work units in the AI Documentation Framework. Each entry includes status, relationships, dependencies, and other metadata to provide a comprehensive overview of the framework's development.
 
-Last registry update: 2025-03-27
+### Maintenance Protocol
+
+1. **Adding New Work Units**:
+   - Create a new entry in the appropriate section
+   - Include all required metadata
+   - Update the hierarchy diagram
+
+2. **Updating Existing Work Units**:
+   - Update the status, completion percentage, and last updated date
+   - Modify relationships and dependencies as needed
+   - Ensure the hierarchy diagram reflects any changes
+
+3. **Completing Work Units**:
+   - Move the entry from Active to Completed section
+   - Update the completion percentage to 100%
+   - Add the completion date
+
+## Last Updated
+2025-03-28

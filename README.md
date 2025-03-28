@@ -33,6 +33,39 @@ atavya/
         └── CustomerCard/               # Example customer card component
 ```
 
+## AI Documentation Framework
+
+This project uses the AI Documentation Framework to maintain comprehensive documentation and track work units. The framework provides:
+
+- **Work Unit Management**: Track implementation tasks, enhancements, and bug fixes
+- **Documentation Generation**: Automatically generate and update documentation
+- **Progress Tracking**: Monitor completion status of work units and requirements
+- **Trigger System**: Automate work unit management and documentation updates
+
+### Trigger System
+
+The project includes a comprehensive trigger system that automates many aspects of work unit management:
+
+- **Work Unit Creation**: Automatically create new work units and update the registry
+- **Work Unit Updates**: Track status and completion of work units
+- **Documentation Updates**: Automatically update documentation based on work unit changes
+- **Registry Management**: Maintain a central registry of all work units
+
+For detailed information on using the trigger system, see [Trigger System Documentation](./.ai/documentation/framework/trigger_system.md).
+
+### Work Units
+
+Current active work units:
+
+- **WU-001**: Atavya Platform Core Requirements
+- **WU-008**: UI Component Library Implementation (79% complete)
+- **WU-010**: AI Documentation Framework Enhancements (25% complete)
+- **WU-013**: Atavya Side Panel
+- **WU-013-01**: HVAC Field Management Side Panel
+- **WU-014**: AI Documentation Framework Workflow Enhancements
+
+To view all work units and their status, see the [Work Unit Registry](./.ai/work_units/registry.md).
+
 ## Core Features
 
 - **Base Entity Framework**: Common entity model with inheritance
@@ -89,3 +122,8 @@ This repository is structured to be used with AI code generators like Windsurf A
 - Maintain separation between core platform and industry-specific code
 - Add all UI components to the component library with proper documentation
 - Test components in isolation using the component viewer before integration
+
+## Recent Updates
+
+- **2025-03-28**: Rich Text Standardization (WU-009)
+This section lists recent updates to the framework.
